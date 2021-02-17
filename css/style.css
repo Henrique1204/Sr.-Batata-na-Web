@@ -15,12 +15,12 @@ html {
     --branco: #F4F4F4;
     --amarelo: #DA2;
     --marrom: #850;
+    --amarelo_opaco: #D9BA68;
 }
 
 body {
     font-family: sans-serif;
     color: var(--preto);
-    background-color: #FFF;
 }
 
 img {
@@ -36,7 +36,7 @@ img {
     color: var(--amarelo);
 }
 
-span {
+strong {
     font-size: inherit;
 }
 
@@ -122,7 +122,7 @@ header {
 /* Sobre */
 #sobre {
     padding: 1.5rem 0;
-    background: linear-gradient(170deg, #FFF 35%, var(--preto) 35%);
+    background: linear-gradient(170deg, #FFF 35%, var(--amarelo_opaco) 35%);
 }
 
 #sobre .container {
@@ -153,8 +153,8 @@ header {
     margin-top: 1.5rem;
 }
 
-#sobre .amarelo {
-    color: var(--amarelo);
+#sobre .preto {
+    color: var(--preto);
 }
 
 @media (max-width: 740px) {
@@ -169,4 +169,69 @@ header {
     #sobre .img_container {
         margin-bottom: 1.5rem;
     }
+}
+
+/* Respostas */
+#respostas {
+    padding: 1.5rem 0;
+    background: linear-gradient(170deg, var(--amarelo_opaco) 35%, #FFF 35%);
+}
+
+#respostas .titulo {
+    color: var(--branco);
+}
+
+#respostas .card_bloqueio, #respostas .card_resposta {
+    width: 340px;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin: 64px auto;
+    font-weight: bold;
+    text-align: center;
+    color: var(--branco);
+    background-color: var(--preto);
+    box-shadow: 2px 2px 4px rgba(34, 34, 34, 0.4);
+    position: relative;
+}
+
+#respostas .btn {
+    width: 100px;
+    border-radius: 30px;
+    padding: 0.875rem;
+    margin: 1.5rem auto 0;
+    text-transform: uppercase;
+    background-color: var(--amarelo);
+    box-shadow: 4px 4px 0 var(--marrom);
+    display: block;
+    transition: all 0.3s ease;
+}
+
+#respostas .btn:hover {
+    box-shadow: 2px 2px 0 var(--marrom);
+}
+
+#respostas .card_resposta {
+    margin: 1.5rem auto;
+}
+
+#respostas .card_resposta span {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: var(--amarelo);
+    box-shadow: 2px 2px 4px rgba(34, 34, 34, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+#respostas .card_resposta h3 {
+    font-size: 1.25rem;
+    color: var(--amarelo);
+    margin-bottom: 1.125rem;
 }
