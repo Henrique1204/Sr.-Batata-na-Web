@@ -16,6 +16,7 @@ html {
     --amarelo: #DA2;
     --marrom: #850;
     --amarelo_opaco: #D9BA68;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -174,7 +175,7 @@ header {
 /* Respostas */
 #respostas {
     padding: 1.5rem 0;
-    background: linear-gradient(170deg, var(--amarelo_opaco) 35%, #FFF 35%);
+    background: linear-gradient(173deg, var(--amarelo_opaco) 35%, #FFF 35%);
 }
 
 #respostas .titulo {
@@ -234,4 +235,12 @@ header {
     font-size: 1.25rem;
     color: var(--amarelo);
     margin-bottom: 1.125rem;
+}
+
+/* Footer */
+footer {
+    padding: 1.5rem 0;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(34, 34, 34, 0.2);
 }
