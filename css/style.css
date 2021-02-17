@@ -28,6 +28,27 @@ img {
     display: block;
 }
 
+.titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--amarelo);
+}
+
+span {
+    font-size: inherit;
+}
+
+.titulo::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    margin: 0.5rem auto 0;
+    background-color: currentColor;
+    display: block;
+}
+
 /* Header */
 header {
     padding: 1.5rem 3rem;
@@ -95,5 +116,57 @@ header {
     .intro h1 {
         max-width: 320px;
         font-size: 1.25rem;
+    }
+}
+
+/* Sobre */
+#sobre {
+    padding: 1.5rem 0;
+    background: linear-gradient(170deg, #FFF 35%, var(--preto) 35%);
+}
+
+#sobre .container {
+    max-width: 700px;
+    margin: 1.5rem auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sobre .img_container {
+    width: 340px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px rgba(34, 34, 34, 0.4);
+    overflow: hidden;
+}
+
+#sobre .paragrafos {
+    max-width: 340px;
+    color: var(--branco);
+}
+
+#sobre .paragrafos p {
+    font-size: 1.125rem;
+}
+
+#sobre .paragrafos p + p{
+    margin-top: 1.5rem;
+}
+
+#sobre .amarelo {
+    color: var(--amarelo);
+}
+
+@media (max-width: 740px) {
+    #sobre .container {
+        flex-direction: column;
+    }
+
+    #sobre .img_container, #sobre .paragrafos {
+        max-width: 300px;
+    }
+
+    #sobre .img_container {
+        margin-bottom: 1.5rem;
     }
 }
