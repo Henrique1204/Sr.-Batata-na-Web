@@ -73,3 +73,27 @@ header {
         font-size: 1rem;
     }
 }
+
+/* Introdução */
+.intro {
+    padding: 3rem 0;
+}
+
+.intro .img_container {
+    width: 220px;
+    margin: 0 auto;
+}
+
+.intro h1 {
+    max-width: 460px;
+    margin: 1.5rem auto 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media (max-width: 740px) {
+    .intro h1 {
+        max-width: 320px;
+        font-size: 1.25rem;
+    }
+}
