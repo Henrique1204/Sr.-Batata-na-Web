@@ -55,10 +55,12 @@
     <section id="respostas">
         <h1 class="titulo">Respostas</h1>
 
-        <div class="card_bloqueio">
+        <div class="card_bloqueio" v-if="true">
             <p>Para ter acesso as respostas é necessário completar o jogo</p>
             <a href="quiz" class="btn">Jogar</a>
         </div>
+
+        <lista-respostas v-else></lista-respostas>
     </section>
 
     <footer>
