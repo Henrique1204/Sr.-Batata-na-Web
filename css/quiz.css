@@ -9,6 +9,7 @@
     align-items: center;
     --verde: #291;
     --verde-escuro: #050;
+    --vermelho: #F22;
 }
 
 #quiz .btn {
@@ -82,4 +83,63 @@
         padding: 1rem 0.5rem;
         font-size: 1.8rem;
     }
+}
+
+#quiz .btn_pergunta {
+    width: 200px;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #111;
+    box-shadow: 0 0 0 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+#quiz .btn_pergunta:hover {
+    color: var(--amarelo);
+}
+
+#quiz .btn_pergunta span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-family: sans-serif;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    color: #111;
+    background-color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -1rem;
+    transition: background-color 0.3s ease;
+}
+
+#quiz .btn_pergunta:hover span {
+    background-color: var(--amarelo);
+}
+
+#quiz .btn_pergunta.errada {
+    color: var(--vermelho);
+}
+
+#quiz .btn_pergunta.errada span {
+    background-color: var(--vermelho);
+}
+
+#quiz .btn_pergunta.correta {
+    color: var(--verde);
+}
+
+#quiz .btn_pergunta.correta span {
+    background-color: var(--verde);
 }
