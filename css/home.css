@@ -121,16 +121,16 @@ header {
 }
 
 /* Respostas */
-#respostas {
+.respostas {
     padding: 1.5rem 0;
     background: linear-gradient(173deg, var(--amarelo_opaco) 35%, #FFF 35%);
 }
 
-#respostas .titulo {
+.respostas .titulo {
     color: var(--branco);
 }
 
-#respostas .card_bloqueio, #respostas .card_resposta {
+.respostas .card_bloqueio, .respostas .card_resposta {
     width: 340px;
     padding: 1.5rem;
     border-radius: 6px;
@@ -143,7 +143,7 @@ header {
     position: relative;
 }
 
-#respostas .lista_respostas {
+.respostas .lista_respostas {
     max-width: 720px;
     margin: 2rem auto 0;
     display: flex;
@@ -151,11 +151,11 @@ header {
     justify-content: space-between;
 }
 
-#respostas .card_resposta {
+.respostas .card_resposta {
     margin: 1rem 10px;
 }
 
-#respostas .card_resposta span {
+.respostas .card_resposta span {
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -171,18 +171,18 @@ header {
     left: -10px;
 }
 
-#respostas .card_resposta h3 {
+.respostas .card_resposta h3 {
     font-size: 1.25rem;
     color: var(--amarelo);
     margin-bottom: 1.125rem;
 }
 
 @media (max-width: 740px) {
-    #respostas .lista_respostas {
+    .respostas .lista_respostas {
         max-width: 300px;
     }
 
-    #respostas .card_resposta {
+    .respostas .card_resposta {
         margin: 1rem 0;
     }
 }

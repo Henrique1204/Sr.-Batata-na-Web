@@ -1,4 +1,4 @@
-#quiz {
+.quiz {
     width: 100vw;
     height: 100vh;
     padding: 2rem 0;
@@ -12,17 +12,17 @@
     --vermelho: #F22;
 }
 
-#quiz .btn {
+.quiz .btn {
     font-family: sans-serif;
 }
 
 @media (max-width: 400px) {
-    #quiz {
+    .quiz {
         padding: 0;
     }
 }
 
-#quiz section {
+.quiz section {
     width: 100%;
     height: 100%;
     max-width: 400px;
@@ -37,39 +37,39 @@
     align-items: center;
 }
 
-#quiz .inicio {
+.quiz .inicio {
     background-color: #FFF;
 }
 
-#quiz .intro {
+.quiz .intro {
     align-items: flex-start;
 }
 
-#quiz .intro p {
+.quiz .intro p {
     font-size: 1.25rem;
     line-height: 1.6;
 }
 
-#quiz .intro *:nth-child(even) {
+.quiz .intro *:nth-child(even) {
     text-align: right;
     align-self: flex-end;
 }
 
-#quiz .intro .btn {
+.quiz .intro .btn {
     margin: 0;
     background-color: var(--verde);
     box-shadow: 4px 4px 0 var(--verde-escuro);
 }
 
-#quiz .intro .btn:hover {
+.quiz .intro .btn:hover {
     box-shadow: 2px 2px 0 var(--verde-escuro);
 }
 
-#quiz .pergunta {
+.quiz .pergunta {
     padding: 4rem 1rem;
 }
 
-#quiz .pergunta h1 {
+.quiz .pergunta h1 {
     padding: 2rem 1rem;
     border: 2px solid;
     border-radius: 6px;
@@ -79,13 +79,13 @@
 }
 
 @media (max-width: 400px) {
-    #quiz .pergunta h1 {
+    .quiz .pergunta h1 {
         padding: 1rem 0.5rem;
         font-size: 1.8rem;
     }
 }
 
-#quiz .btn_pergunta {
+.quiz .btn_pergunta {
     width: 200px;
     padding: 1rem 2rem;
     border: none;
@@ -101,13 +101,14 @@
     position: relative;
     transition: color 0.3s ease;
     cursor: pointer;
+    outline: none;
 }
 
-#quiz .btn_pergunta:hover {
+.quiz .btn_pergunta:hover {
     color: var(--amarelo);
 }
 
-#quiz .btn_pergunta span {
+.quiz .btn_pergunta span {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -124,22 +125,22 @@
     transition: background-color 0.3s ease;
 }
 
-#quiz .btn_pergunta:hover span {
+.quiz .btn_pergunta:hover span {
     background-color: var(--amarelo);
 }
 
-#quiz .btn_pergunta.errada {
+.quiz .btn_pergunta.errada {
     color: var(--vermelho);
 }
 
-#quiz .btn_pergunta.errada span {
+.quiz .btn_pergunta.errada span {
     background-color: var(--vermelho);
 }
 
-#quiz .btn_pergunta.correta {
+.quiz .btn_pergunta.correta {
     color: var(--verde);
 }
 
-#quiz .btn_pergunta.correta span {
+.quiz .btn_pergunta.correta span {
     background-color: var(--verde);
 }
