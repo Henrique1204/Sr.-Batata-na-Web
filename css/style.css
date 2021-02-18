@@ -211,8 +211,16 @@ header {
     box-shadow: 2px 2px 0 var(--marrom);
 }
 
+#respostas .lista_respostas {
+    max-width: 720px;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 #respostas .card_resposta {
-    margin: 1.5rem auto;
+    margin: 1rem 10px;
 }
 
 #respostas .card_resposta span {
@@ -235,6 +243,16 @@ header {
     font-size: 1.25rem;
     color: var(--amarelo);
     margin-bottom: 1.125rem;
+}
+
+@media (max-width: 740px) {
+    #respostas .lista_respostas {
+        max-width: 300px;
+    }
+
+    #respostas .card_resposta {
+        margin: 1rem 0;
+    }
 }
 
 /* Footer */

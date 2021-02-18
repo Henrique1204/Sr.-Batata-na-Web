@@ -1,4 +1,4 @@
-import CardResposta from './Componentes/CardResposta.js';
+import ListaRespostas from './Componentes/ListaRespostas.js';
 
 const vm = new Vue({
     el: '#respostas',
@@ -6,6 +6,6 @@ const vm = new Vue({
         teste: "Testando"
     },
     components: {
-        CardResposta
+        ListaRespostas
     }
 });
