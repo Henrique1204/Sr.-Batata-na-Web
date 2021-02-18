@@ -27,6 +27,7 @@
     max-width: 400px;
     padding: 4rem 2rem;
     border-radius: 6px;
+    color: var(--branco);
     background-color: #111;
     box-shadow: 0 0 0 4px var(--marrom);
     display: flex;
@@ -46,7 +47,6 @@
 #quiz .intro p {
     font-size: 1.25rem;
     line-height: 1.6;
-    color: var(--branco);
 }
 
 #quiz .intro *:nth-child(even) {
@@ -62,4 +62,24 @@
 
 #quiz .intro .btn:hover {
     box-shadow: 2px 2px 0 var(--verde-escuro);
+}
+
+#quiz .pergunta {
+    padding: 4rem 1rem;
+}
+
+#quiz .pergunta h1 {
+    padding: 2rem 1rem;
+    border: 2px solid;
+    border-radius: 6px;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--amarelo);
+}
+
+@media (max-width: 400px) {
+    #quiz .pergunta h1 {
+        padding: 1rem 0.5rem;
+        font-size: 1.8rem;
+    }
 }
