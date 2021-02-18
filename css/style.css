@@ -262,3 +262,12 @@ footer {
     text-align: center;
     box-shadow: 0 -2px 4px rgba(34, 34, 34, 0.2);
 }
+
+#quiz {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--preto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
