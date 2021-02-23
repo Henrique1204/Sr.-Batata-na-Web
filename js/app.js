@@ -3,7 +3,10 @@ import BtnResposta from './Componentes/BtnResposta.js';
 
 const vm = new Vue({
     el: '#App',
-    data: {},
+    data: {
+        respondido: false,
+        telaAtual: "inicial"
+    },
     components: {
         ListaRespostas,
         BtnResposta

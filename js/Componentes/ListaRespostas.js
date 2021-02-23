@@ -10,7 +10,7 @@ export default {
     },
     methods: {
         async buscarRespostas() {
-            const res = await fetch("../../db/respostas.json");
+            const res = await fetch("../../db/respostas/index.json");
             this.respostas = await res.json();
         }
     },
