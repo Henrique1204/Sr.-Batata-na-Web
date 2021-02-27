@@ -18,6 +18,11 @@ const vm = new Vue({
             const json = await res.json();
 
             this.perguntas = json;
+            console.log(json);
+        },
+        atualizar_tela(mensagem) {
+            console.log(mensagem);
+            this.telaAtual = mensagem;
         }
     },
     created() {

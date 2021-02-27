@@ -2,22 +2,36 @@ import BtnResposta from './BtnResposta.js';
 
 export default {
     name: 'Pergunta',
-    props: ['pergunta', 'alternativas', 'numero'],
+    props: ['pergunta', 'alternativas', 'numero', 'tela_atual'],
+    methods: {
+        emitirTrocaTela(mensagem) {
+            this.$emit('trocar_tela', mensagem);
+        }
+    },
+    computed: {
+        tela() {
+            return `perguntas_${this.numero}`;
+        },
+        proximaTela() {
+            return `perguntas_${this.numero + 1}`
+        }
+    },
     components: {
         BtnResposta
     },
     template: (
-        `<section class="pergunta" key="numero">
+        `<section class="pergunta" v-if="tela_atual === tela" key="numero">
             <h1>{{pergunta}}</h1>
 
 
             <btn-resposta
-                v-for="({letra, resposta}, index) in alternativas"
-                :letra="letra" :alternativa="resposta"
-                :key="letra + '_' + index"
+                v-for="({letra, resposta}) in alternativas"
+                :key="letra + '_' + numero"
+                :letra="letra"
+                :alternativa="resposta"
+                :tela="proximaTela"
+                @clicarBotao="emitirTrocaTela"
             ></btn-resposta>
         </section>`
     )
 }
-
-// v-if="telaAtual === 'pergunta' + '_' + numero"

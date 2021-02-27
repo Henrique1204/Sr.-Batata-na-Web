@@ -13,59 +13,42 @@
 </head>
 <body>
     <div id="App" class="quiz">
-        <transition name="troca" mode="out-in">
-            <section class="inicio" v-if="telaAtual === 'inicial'" key="inicial">
-                <h1><img src="./img/logo-entrevista.svg" alt="Entrevista com Sr. Batata"></h1>
-    
-                <div class="img_container">
-                    <img src="./img/srbatata.gif" alt="Sr. Batata">
-                </div>
-    
-                <button class="btn" @click="telaAtual = 'intro'">Começar</button>
-            </section>
-    
-            <section class="intro" v-if="telaAtual === 'intro'" key="intro">
-                <p>Está aberto o processo seletivo para trabalhar na maior empresa de batata do mundo.</p>
-                <p>Você acha que tem o que é preciso para ser um dos novos funcionários das Industrias Batata's?</p>
-                <p>Pois então venha testar seus conhecimentos numa jornada incrível e além da imaginação.... em uma entrevista com o Sr. Batata.</p>
-                <button class="btn" @click="telaAtual = 'perguntas_1'">Continuar</button>
-            </section>
-    
-            <pergunta
-                v-if="perguntas"
-                v-for="({ numero, pergunta, alternativas }) in perguntas"
-                :key="numero"
-                :pergunta="pergunta"
-                :alternativas="alternativas"
-                :numero="numero"
-            ></pergunta>
-    
-            <section class="feedback" v-if="telaAtual === 'feedback'" key="feedback">
-                <h1 class="ganhou">Parabéns!!!!</h1>
-    
-                <p>Sr. Batata gostou de sua entrevista e irá te receber nas Industrias Batata´s</p>
-    
-                <button class="btn">Jogar outa vez</button>
-            </section>
-        </transition>
+        <section class="inicio" v-if="telaAtual === 'inicial'" key="inicial">
+            <h1><img src="./img/logo-entrevista.svg" alt="Entrevista com Sr. Batata"></h1>
+
+            <div class="img_container">
+                <img src="./img/srbatata.gif" alt="Sr. Batata">
+            </div>
+
+            <button class="btn" @click="telaAtual = 'intro'">Começar</button>
+        </section>
+
+        <section class="intro" v-if="telaAtual === 'intro'" key="intro">
+            <p>Está aberto o processo seletivo para trabalhar na maior empresa de batata do mundo.</p>
+            <p>Você acha que tem o que é preciso para ser um dos novos funcionários das Industrias Batata's?</p>
+            <p>Pois então venha testar seus conhecimentos numa jornada incrível e além da imaginação.... em uma entrevista com o Sr. Batata.</p>
+            <button class="btn" @click="telaAtual = 'perguntas_1'">Continuar</button>
+        </section>
+
+        <pergunta
+            v-for="({ numero, pergunta, alternativas }) in perguntas"
+            :key="numero"
+
+            :pergunta="pergunta"
+            :alternativas="alternativas"
+            :numero="numero"
+            :tela_atual="telaAtual"
+
+            @trocar_tela="atualizar_tela"
+        ></pergunta>
+
+        <section class="feedback" v-if="telaAtual === 'feedback'" key="feedback">
+            <h1 class="ganhou">Parabéns!!!!</h1>
+
+            <p>Sr. Batata gostou de sua entrevista e irá te receber nas Industrias Batata´s</p>
+
+            <button class="btn">Jogar outa vez</button>
+        </section>
     </div>
-
-    <style>
-        .troca-enter, .troca-leave-to {
-            opacity: 0;
-        }
-
-        .troca-enter {
-            transform: translate3d(2rem, 0, 0);
-        }
-
-        .troca-leave-to {
-            transform: translate3d(-2rem, 0, 0);
-        }
-
-        .troca-enter-active, .troca-leave-active {
-            transition: all 0.3s ease;
-        }
-    </style>
 </body>
 </html>
