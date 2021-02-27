@@ -6,17 +6,20 @@
             {
                 "letra": "A",
                 "resposta": "Batata",
-                "correta": true
+                "correta": true,
+                "erro": null
             },
             {
                 "letra": "B",
                 "resposta": "Cenoura",
-                "correta": false
+                "correta": false,
+                "erro": "Cenoura só é bom no bolo."
             },
             {
                 "letra": "C",
                 "resposta": "Alface",
-                "correta": false
+                "correta": false,
+                "erro": "Alface??? Come grama logo de uma vez."
             }
         ]
     },
@@ -27,17 +30,20 @@
             {
                 "letra": "A",
                 "resposta": "Um saco por pessoa",
-                "correta": false
+                "correta": false,
+                "erro": "Por que mil gramas e não mil batatas?"
             },
             {
                 "letra": "B",
                 "resposta": "1 Kg",
-                "correta": false
+                "correta": false,
+                "erro": "Você gostaria da sua espécie sendo vendida dentro de sacos?"
             },
             {
                 "letra": "C",
                 "resposta": "Batata nunca é demais",
-                "correta": true
+                "correta": true,
+                "erro": null
             }
         ]
     },
@@ -48,17 +54,20 @@
             {
                 "letra": "A",
                 "resposta": "5",
-                "correta": false
+                "correta": false,
+                "erro": "5 é número impar, má sorte."
             },
             {
                 "letra": "B",
                 "resposta": "4",
-                "correta": false
+                "correta": false,
+                "erro": "Sr. Batata está decepcionado com você."
             },
             {
                 "letra": "C",
                 "resposta": "O limite é a imaginação",
-                "correta": true
+                "correta": true,
+                "erro": null
             }
         ]
     },
@@ -69,17 +78,20 @@
             {
                 "letra": "A",
                 "resposta": "Sal",
-                "correta": false
+                "correta": false,
+                "erro": "Pessoas com pressão alta não poderão comer ela assim."
             },
             {
                 "letra": "B",
                 "resposta": "Nada",
-                "correta": true
+                "correta": true,
+                "erro": null
             },
             {
                 "letra": "C",
                 "resposta": "Ser doce",
-                "correta": false
+                "correta": false,
+                "erro": "Pessoas com diabetes não poderão comer ela assim."
             }
         ]
     },
@@ -90,17 +102,20 @@
             {
                 "letra": "A",
                 "resposta": "Bala no alvo",
-                "correta": false
+                "correta": false,
+                "erro": "Isso não é uma competição de tiro."
             },
             {
                 "letra": "B",
                 "resposta": "Sr. Cabeça de Batata",
-                "correta": true
+                "correta": true,
+                "erro": null
             },
             {
                 "letra": "C",
                 "resposta": "Rex",
-                "correta": false
+                "correta": false,
+                "erro": "Coisas extintas são sem relevância."
             }
         ]
     },
@@ -111,17 +126,20 @@
             {
                 "letra": "A",
                 "resposta": "Alta",
-                "correta": false
+                "correta": false,
+                "erro": "interesting, Mr. Batat liked your interview, but still decided to disapprove you in the terview."
             },
             {
                 "letra": "B",
                 "resposta": "Baixo",
-                "correta": false
+                "correta": false,
+                "erro": "interessante, Mr. Batata like your entrevist, but ainda assim decidiu to reprovar in the entrevist."
             },
             {
                 "letra": "C",
                 "resposta": "Potato",
-                "correta": true
+                "correta": true,
+                "erro": null
             }
         ]
     },
@@ -132,17 +150,20 @@
             {
                 "letra": "A",
                 "resposta": "...espalha a rama pelo chão",
-                "correta": true
+                "correta": true,
+                "erro": null
             },
             {
                 "letra": "B",
                 "resposta": "...faz uma baguncinha na plantação",
-                "correta": false
+                "correta": false,
+                "erro": "Baguncinha é só em Los Angeles, California."
             },
             {
                 "letra": "C",
                 "resposta": "...Sr. Batata não assume esse B.O",
-                "correta": false
+                "correta": false,
+                "erro": "Sr. Batata é contra o abandono de menores."
             }
         ]
     },
@@ -153,17 +174,20 @@
             {
                 "letra": "A",
                 "resposta": "Paçoca",
-                "correta": false
+                "correta": false,
+                "erro": "Vamos pensar pelo lado filosófico, o que é ser melhor?"
             },
             {
                 "letra": "B",
                 "resposta": "Vish...",
-                "correta": true
+                "correta": true,
+                "erro": null
             },
             {
                 "letra": "C",
                 "resposta": "Batata",
-                "correta": false
+                "correta": false,
+                "erro": "Obrigado pelo elogio."
             }
         ]
     },
@@ -174,17 +198,20 @@
             {
                 "letra": "A",
                 "resposta": "Árido",
-                "correta": false
+                "correta": false,
+                "erro": "Acho que minhas batatas não nasceriam muito bem nesse solo."
             },
             {
                 "letra": "B",
                 "resposta": "Umido",
-                "correta": false
+                "correta": false,
+                "erro": "Acho que minhas batatas não aguentariam muita água."
             },
             {
                 "letra": "C",
                 "resposta": "O que nasce batata",
-                "correta": true
+                "correta": true,
+                "erro": null
             }
         ]
     },
@@ -195,17 +222,20 @@
             {
                 "letra": "A",
                 "resposta": "Cimento e bloco",
-                "correta": true
+                "correta": true,
+                "erro": null
             },
             {
                 "letra": "B",
                 "resposta": "Batata",
-                "correta": false
+                "correta": false,
+                "erro": "Seria muito difícil não comer essa casa, você não acha?"
             },
             {
                 "letra": "C",
                 "resposta": "Madeira",
-                "correta": false
+                "correta": false,
+                "erro": "OH NÃO!!! FOGO."
             }
         ]
     }

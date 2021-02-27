@@ -6,6 +6,7 @@ const vm = new Vue({
     data: {
         respondido: false,
         telaAtual: "inicial",
+        feedBack: null,
         perguntas: null
     },
     components: {
@@ -14,15 +15,16 @@ const vm = new Vue({
     },
     methods: {
         async fetchPerguntas() {
-            const res = await fetch('https://henrique1204.github.io/Sr.-Batata-na-Web/db/perguntas/');
+            const res = await fetch('../db/perguntas/index.json');
             const json = await res.json();
 
             this.perguntas = json;
-            console.log(json);
         },
-        atualizar_tela(mensagem) {
-            console.log(mensagem);
-            this.telaAtual = mensagem;
+        atualizar_tela(acao) {
+            const { tela, feedBack } =  acao;
+
+            this.telaAtual = tela;
+            this.feedBack = feedBack;
         }
     },
     created() {

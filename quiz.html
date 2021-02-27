@@ -43,11 +43,16 @@
         ></pergunta>
 
         <section class="feedback" v-if="telaAtual === 'feedback'" key="feedback">
-            <h1 class="ganhou">Parabéns!!!!</h1>
+            <h1 v-if="feedBack.status === 'erro'" class="errou">Errou!!!</h1>
+            <h1 v-else class="ganhou">Parabéns!!!</h1>
 
-            <p>Sr. Batata gostou de sua entrevista e irá te receber nas Industrias Batata´s</p>
+            <p>{{feedBack.texto}}</p>
 
-            <button class="btn" @click="telaAtual = 'intro'">Jogar outa vez</button>
+            <button v-if="feedBack.status === 'erro'" class="btn" @click="telaAtual = 'perguntas_1'">
+                Tentar novamente
+            </button>
+
+            <button v-else class="btn" @click="telaAtual = 'intro'">Jogar outa vez</button>
         </section>
     </div>
 </body>

@@ -4,8 +4,8 @@ export default {
     name: 'Pergunta',
     props: ['pergunta', 'alternativas', 'numero', 'tela_atual'],
     methods: {
-        emitirTrocaTela(mensagem) {
-            this.$emit('trocar_tela', mensagem);
+        emitirTrocaTela(acao) {
+            this.$emit('trocar_tela', acao);
         }
     },
     computed: {
@@ -13,7 +13,8 @@ export default {
             return `perguntas_${this.numero}`;
         },
         proximaTela() {
-            return `perguntas_${this.numero + 1}`
+            if (this.numero === 10) return 'feedback';
+            else return `perguntas_${this.numero + 1}`
         }
     },
     components: {
@@ -25,13 +26,14 @@ export default {
 
 
             <btn-resposta
-                v-for="({letra, resposta, correta}) in alternativas"
+                v-for="({letra, resposta, correta, erro}) in alternativas"
                 :key="letra + '_' + numero"
 
                 :letra="letra"
                 :alternativa="resposta"
                 :tela="proximaTela"
                 :correta="correta"
+                :erro="erro"
 
                 @clicarBotao="emitirTrocaTela"
             ></btn-resposta>
