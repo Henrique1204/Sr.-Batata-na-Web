@@ -4,7 +4,7 @@ import Pergunta from './Componentes/Pergunta.js';
 const vm = new Vue({
     el: '#App',
     data: {
-        respondido: false,
+        respondido: window.localStorage.getItem('finalizou') || false,
         telaAtual: "inicial",
         feedBack: null,
         perguntas: null
@@ -15,7 +15,7 @@ const vm = new Vue({
     },
     methods: {
         async fetchPerguntas() {
-            const res = await fetch('../db/perguntas/index.json');
+            const res = await fetch('https://henrique1204.github.io/Sr.-Batata-na-Web/db/perguntas/index.json');
             const json = await res.json();
 
             this.perguntas = json;

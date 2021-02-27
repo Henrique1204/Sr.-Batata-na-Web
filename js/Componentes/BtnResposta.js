@@ -16,7 +16,9 @@ export default {
                         feedBack = {
                             texto: 'Sr. Batata gostou de sua entrevista e irá te receber nas Industrias Batata´s',
                             status: 'ganhou'
-                        }
+                        };
+
+                        window.localStorage.setItem("finalizou", "true");
                     }
 
                     this.$emit('clicarBotao', { tela: this.tela, feedBack });
