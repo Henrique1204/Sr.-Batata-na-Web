@@ -25,11 +25,14 @@ export default {
 
 
             <btn-resposta
-                v-for="({letra, resposta}) in alternativas"
+                v-for="({letra, resposta, correta}) in alternativas"
                 :key="letra + '_' + numero"
+
                 :letra="letra"
                 :alternativa="resposta"
                 :tela="proximaTela"
+                :correta="correta"
+
                 @clicarBotao="emitirTrocaTela"
             ></btn-resposta>
         </section>`

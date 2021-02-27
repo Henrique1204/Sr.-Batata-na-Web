@@ -10,7 +10,7 @@ export default {
     },
     methods: {
         async buscarRespostas() {
-            const res = await fetch("../../db/respostas/index.json");
+            const res = await fetch("https://henrique1204.github.io/Sr.-Batata-na-Web/db/respostas/");
             this.respostas = await res.json();
         }
     },

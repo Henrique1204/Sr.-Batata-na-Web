@@ -14,7 +14,7 @@ const vm = new Vue({
     },
     methods: {
         async fetchPerguntas() {
-            const res = await fetch('../db/perguntas/index.json');
+            const res = await fetch('https://henrique1204.github.io/Sr.-Batata-na-Web/db/perguntas/');
             const json = await res.json();
 
             this.perguntas = json;
