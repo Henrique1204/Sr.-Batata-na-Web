@@ -1,14 +1,26 @@
 import ListaRespostas from './Componentes/ListaRespostas.js';
-import BtnResposta from './Componentes/BtnResposta.js';
+import Pergunta from './Componentes/Pergunta.js';
 
 const vm = new Vue({
     el: '#App',
     data: {
         respondido: false,
-        telaAtual: "inicial"
+        telaAtual: "inicial",
+        perguntas: null
     },
     components: {
         ListaRespostas,
-        BtnResposta
+        Pergunta
+    },
+    methods: {
+        async fetchPerguntas() {
+            const res = await fetch('../db/perguntas/index.json');
+            const json = await res.json();
+
+            this.perguntas = json;
+        }
+    },
+    created() {
+        this.fetchPerguntas();
     }
 });

@@ -1,0 +1,212 @@
+[
+    {
+        "numero": 1,
+        "pergunta": "Qual o melhor legume?",
+        "alternativas": [
+            {
+                "letra": "A",
+                "resposta": "Batata",
+                "correta": true
+            },
+            {
+                "letra": "B",
+                "resposta": "Cenoura",
+                "correta": false
+            },
+            {
+                "letra": "C",
+                "resposta": "Alface",
+                "correta": false
+            }
+        ]
+    },
+    {
+        "numero": 2,
+        "pergunta": "Quantas batatas se deve ter em casa?",
+        "alternativas": [
+            {
+                "letra": "A",
+                "resposta": "Um saco por pessoa",
+                "correta": false
+            },
+            {
+                "letra": "B",
+                "resposta": "1 Kg",
+                "correta": false
+            },
+            {
+                "letra": "C",
+                "resposta": "Batata nunca é demais",
+                "correta": true
+            }
+        ]
+    },
+    {
+        "numero": 3,
+        "pergunta": "De quantas formas podemos preparar a batata?",
+        "alternativas": [
+            {
+                "letra": "A",
+                "resposta": "5",
+                "correta": false
+            },
+            {
+                "letra": "B",
+                "resposta": "4",
+                "correta": false
+            },
+            {
+                "letra": "C",
+                "resposta": "O limite é a imaginação",
+                "correta": true
+            }
+        ]
+    },
+    {
+        "numero": 4,
+        "pergunta": "O que falta pra batata ser perfeita?",
+        "alternativas": [
+            {
+                "letra": "A",
+                "resposta": "Sal",
+                "correta": false
+            },
+            {
+                "letra": "B",
+                "resposta": "Nada",
+                "correta": true
+            },
+            {
+                "letra": "C",
+                "resposta": "Ser doce",
+                "correta": false
+            }
+        ]
+    },
+    {
+        "numero": 5,
+        "pergunta": "Qual o melhor personagem de Toy Story?",
+        "alternativas": [
+            {
+                "letra": "A",
+                "resposta": "Bala no alvo",
+                "correta": false
+            },
+            {
+                "letra": "B",
+                "resposta": "Sr. Cabeça de Batata",
+                "correta": true
+            },
+            {
+                "letra": "C",
+                "resposta": "Rex",
+                "correta": false
+            }
+        ]
+    },
+    {
+        "numero": 6,
+        "pergunta": "Qual o seu nível de inglês?",
+        "alternativas": [
+            {
+                "letra": "A",
+                "resposta": "Alta",
+                "correta": false
+            },
+            {
+                "letra": "B",
+                "resposta": "Baixo",
+                "correta": false
+            },
+            {
+                "letra": "C",
+                "resposta": "Potato",
+                "correta": true
+            }
+        ]
+    },
+    {
+        "numero": 7,
+        "pergunta": "Batatinha quando nasce...",
+        "alternativas": [
+            {
+                "letra": "A",
+                "resposta": "...espalha a rama pelo chão",
+                "correta": true
+            },
+            {
+                "letra": "B",
+                "resposta": "...faz uma baguncinha na plantação",
+                "correta": false
+            },
+            {
+                "letra": "C",
+                "resposta": "...Sr. Batata não assume esse B.O",
+                "correta": false
+            }
+        ]
+    },
+    {
+        "numero": 8,
+        "pergunta": "O que é melhor, batata ou paçoca?",
+        "alternativas": [
+            {
+                "letra": "A",
+                "resposta": "Paçoca",
+                "correta": false
+            },
+            {
+                "letra": "B",
+                "resposta": "Vish...",
+                "correta": true
+            },
+            {
+                "letra": "C",
+                "resposta": "Batata",
+                "correta": false
+            }
+        ]
+    },
+    {
+        "numero": 9,
+        "pergunta": "Qual o melhor solo?",
+        "alternativas": [
+            {
+                "letra": "A",
+                "resposta": "Árido",
+                "correta": false
+            },
+            {
+                "letra": "B",
+                "resposta": "Umido",
+                "correta": false
+            },
+            {
+                "letra": "C",
+                "resposta": "O que nasce batata",
+                "correta": true
+            }
+        ]
+    },
+    {
+        "numero": 10,
+        "pergunta": "Uma boa casa é feita de...",
+        "alternativas": [
+            {
+                "letra": "A",
+                "resposta": "Cimento e bloco",
+                "correta": true
+            },
+            {
+                "letra": "B",
+                "resposta": "Batata",
+                "correta": false
+            },
+            {
+                "letra": "C",
+                "resposta": "Madeira",
+                "correta": false
+            }
+        ]
+    }
+]
