@@ -1,6 +1,6 @@
 export default {
     name: 'BtnResposta',
-    props: ['letra', 'alternativa', 'tela', 'correta', 'erro'],
+    props: ['letra', 'alternativa', 'tela', 'correta', 'erro', 'etapa'],
     data: () => ({
         classe: ''
     }),
@@ -31,7 +31,8 @@ export default {
                         tela: 'feedback',
                         feedBack: {
                             texto: this.erro,
-                            status: 'erro'
+                            status: 'erro',
+                            etapa: this.etapa
                         }
                     };
 

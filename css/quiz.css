@@ -84,6 +84,11 @@
     color: var(--amarelo);
 }
 
+.quiz .temaBranco {
+    color: #111;
+    background-color: #FFF;
+}
+
 @media (max-width: 400px) {
     .quiz .pergunta h1 {
         padding: 1rem 0.5rem;
@@ -111,6 +116,10 @@
     outline: none;
 }
 
+.quiz .temaBranco .btn_pergunta {
+    background-color: #FFF;
+}
+
 .quiz .btn_pergunta:hover {
     color: var(--amarelo);
 }
@@ -130,6 +139,11 @@
     position: absolute;
     left: -1rem;
     transition: background-color 0.3s ease;
+}
+
+.quiz .temaBranco .btn_pergunta span {
+    color: #FFF;
+    background-color: #111;
 }
 
 .quiz .btn_pergunta:hover span {

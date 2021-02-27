@@ -42,17 +42,17 @@
             @trocar_tela="atualizar_tela"
         ></pergunta>
 
-        <section class="feedback" v-if="telaAtual === 'feedback'" key="feedback">
+        <section :class="{ temaBranco: feedBack.etapa }" class="feedback" v-if="telaAtual === 'feedback'" key="feedback">
             <h1 v-if="feedBack.status === 'erro'" class="errou">Errou!!!</h1>
             <h1 v-else class="ganhou">Parabéns!!!</h1>
 
             <p>{{feedBack.texto}}</p>
 
-            <button v-if="feedBack.status === 'erro'" class="btn" @click="telaAtual = 'perguntas_1'">
+            <button v-if="feedBack.status === 'erro'" class="btn" @click="telaAtual = 'perguntas_' + checkpoint">
                 Tentar novamente
             </button>
 
-            <button v-else class="btn" @click="telaAtual = 'intro'">Jogar outa vez</button>
+            <button v-else class="btn" @click="resetar">Jogar outa vez</button>
         </section>
     </div>
 </body>
